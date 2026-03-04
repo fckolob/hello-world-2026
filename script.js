@@ -7,6 +7,8 @@ const message = document.getElementById("message");
 const text = "HELLO WORLD!";
 let index = 0;
 
+// Function to add the event to restart animation when clicked.
+
 function addMessageEvent(){
     message.addEventListener("click", ()=>{
          message.style.animation = "none";
@@ -15,11 +17,17 @@ function addMessageEvent(){
         })
 }
 
+// Function to await some time.
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 // Using recursion to add a letter after a delay.
+// After the message is complete a CSS animation is aplied.
+// The event to restart the css animation is added after 2 seconds to prevent
+// trigering the event until the first animation is finished.
+
 
 async function showNextLetter() {
     if (index < text.length) {
@@ -27,8 +35,6 @@ async function showNextLetter() {
         index++;
         
         setTimeout(showNextLetter, 200);
-
-    // After the message is complete a CSS animation is aplied.
 
     } else {
         
