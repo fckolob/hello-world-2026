@@ -7,9 +7,21 @@ const message = document.getElementById("message");
 const text = "HELLO WORLD!";
 let index = 0;
 
+function addMessageEvent(){
+    message.addEventListener("click", ()=>{
+         message.style.animation = "none";
+         message.offsetHeight;
+         message.style.animation = "animate 2s ease-in-out";   
+        })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // Using recursion to add a letter after a delay.
 
-function showNextLetter() {
+async function showNextLetter() {
     if (index < text.length) {
         message.textContent += text[index];
         index++;
@@ -21,6 +33,8 @@ function showNextLetter() {
     } else {
         
         message.style.animation = "animate 2s ease-in-out";
+        await sleep(2000);
+        addMessageEvent();
     }
 }
 
