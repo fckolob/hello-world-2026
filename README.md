@@ -1,6 +1,10 @@
 # Overview
 The Hello world 2026 web page demonstrates how to implement a CSS animation to an HTML element using Javascript and how to force a browser reflow to reset the animation.
 
+https://github.com/fckolob/hello-world-2026
+
+https://fckolob.github.io/hello-world-2026/
+
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
