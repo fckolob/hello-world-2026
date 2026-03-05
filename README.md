@@ -5,7 +5,7 @@ https://github.com/fckolob/hello-world-2026
 
 https://fckolob.github.io/hello-world-2026/
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/kZoOqGmU8lA)
 
 # Development Environment
 
